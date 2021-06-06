@@ -69,7 +69,7 @@ data.forEach(questions => {
     let img = document.createElement("img")
     let h2 = document.createElement("h2")
 
-    // package 
+    // merge section,img,h2 with body
     document.querySelector("body").appendChild(section)
     section.appendChild(img)
     section.appendChild(h2)
@@ -78,7 +78,7 @@ data.forEach(questions => {
     img.src = questions.url
     h2.innerHTML = questions.question
 
-
+   // variable for all possible choice
     let possiblechoice = questions.choice
 
     //function for button 
