@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    position: relative;
+    background-color: #ee82ee;
+  }
+  
+
+  button {
+  
+    width: 200px;
+    height: 100px;
+    background-color: #787878;
+    margin: 0 2.5% 7.5%;
+    color: #FFB6C1;
+    border-style: none;
+    border-radius: 10px;
+    transition: all 1s ease;
+    transform: scale(1.1);
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+  }
+  
+ button:hover{
+    transform:  scale(1.1);
+    cursor: pointer;
+ }
