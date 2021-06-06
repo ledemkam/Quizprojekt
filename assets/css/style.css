@@ -1,27 +1,30 @@
 body {
     text-align: center;
     position: relative;
-    background-color: #ee82ee;
+    background-color: #f1faee;
+    color: #03071e;
   }
+  
   
 
   button {
   
-    width: 200px;
-    height: 100px;
-    background-color: #787878;
+    width: 150px;
+    height: 70px;
+    background-color: aqua;
     margin: 0 2.5% 7.5%;
-    color: #FFB6C1;
+    color: #264653;
     border-style: none;
-    border-radius: 10px;
+    border-radius: 13px;
     transition: all 1s ease;
-    transform: scale(1.1);
-    font-size: 2rem;
+    transform: scale(1);
+    font-size: 1,2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    outline: none;
+    
   }
   
  button:hover{
-    transform:  scale(1.1);
+    transform:  scale(1.2);
     cursor: pointer;
+    color: antiquewhite;
  }
