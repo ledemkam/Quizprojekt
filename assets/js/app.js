@@ -65,35 +65,31 @@ let data = [
 data.forEach(questions => {
 
     // create  elements html
-    let section = document.createElement("section")
-    let img = document.createElement("img")
-    let h2 = document.createElement("h2")
+    let section = document.createElement("section");
+    let img = document.createElement("img");
+    let h2 = document.createElement("h2");
 
     // merge section,img,h2 with body
-    document.querySelector("body").appendChild(section)
-    section.appendChild(img)
-    section.appendChild(h2)
+    document.querySelector("body").appendChild(section);
+    section.appendChild(img);
+    section.appendChild(h2);
 
-    // select object index
-    img.src = questions.url
-    h2.innerHTML = questions.question
+    // acces index of object
+    img.src = questions.url;
+    h2.innerHTML = questions.question;
 
    // variable for all possible choice
-    let possiblechoice = questions.choice
+    let possiblechoice = questions.choice;
 
-    //function for button 
+    //function for change backgroundColor
     possiblechoice.forEach(choice => {
 
-        // create buttons
-        let button = document.createElement('button')
+        // create button
+        let button = document.createElement('button');
+        section.appendChild(button);
+        button.innerHTML = choice;
 
-        // element in section
-        section.appendChild(button)
-
-        // show on browser
-        button.innerHTML = choice
-
-        // buttun event for change color
+        // now use event
         button.addEventListener('click', () => {
             if (choice == questions.answer) {
 
